@@ -106,6 +106,7 @@ h1, h2 {
 
 h2 {
     font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 
@@ -114,52 +115,24 @@ h2 {
     opacity: 1; 
 }
 
-.icons {
-    color: white;
-    font-size: 2.5rem;
-    transition: color 0.4s ease-out;
-    position: flex;
-    display: flex;
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-}
 .icon-snap {
     color: white;
-    font-size: 2.5rem;
-    transition: color 0.4s ease-out;
-    position: flex;
-    display: flex;
-    text-align: center;
-    top: 0;
-    bottom: 0;
     text-decoration: none;
+    font-size: 2.5rem;
+    transition: color 0.7s ease; 
 }
 
 .icon-snap:hover {
-    color: lightsalmon;
+    color: peachpuff;
 }
 
 .icon-steam {
-    color: white;
-    font-size: 2.5rem;
-    transition: color 0.4s ease-out;
-    position: flex;
-    display: flex;
-    text-align: center;
-    top: 0;
-    bottom: 0;
+        color: white;
     text-decoration: none;
-    margin-right: 5px;
+    font-size: 2.5rem;
+    transition: color 0.7s ease; 
 }
 
 .icon-steam:hover {
-    color: lightsalmon;
+    color: peachpuff;
 }
-
-.rs {
-    margin-bottom: 25px;
-} 
