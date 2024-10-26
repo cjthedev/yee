@@ -1,0 +1,165 @@
+body {
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    cursor: url('/assets/img/cursor.png'), auto; 
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
+    cursor: url('/assets/img/cursor.png'), auto;
+    font-family: "Anonymous Pro", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    transition: opacity 0.5s ease; 
+}
+
+
+.overlay.hide {
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+
+.content {
+    display: none; 
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2; 
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.misto-image {
+    width: 100px; 
+    margin-bottom: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); 
+}
+
+
+.tooltip {
+    position: absolute;
+    bottom: 110%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 8px 12px; 
+    border-radius: 10px; 
+    font-size: 1rem;
+    white-space: nowrap; 
+    z-index: 3; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.3s ease-in, visibility 0.3s ease-in; 
+}
+
+
+.misto-image:hover + .tooltip {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+
+.misto-image:not(:hover) + .tooltip {
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+.content.show {
+    display: block; 
+    opacity: 1; 
+}
+
+.icons {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.4s ease-out;
+    position: flex;
+    display: flex;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+.icon-snap {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.4s ease-out;
+    position: flex;
+    display: flex;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.icon-snap:hover {
+    color: lightsalmon;
+}
+
+.icon-steam {
+    color: white;
+    font-size: 2.5rem;
+    transition: color 0.4s ease-out;
+    position: flex;
+    display: flex;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.icon-steam:hover {
+    color: lightsalmon;
+}
+
+.rs {
+    margin-bottom: 25px;
+}
